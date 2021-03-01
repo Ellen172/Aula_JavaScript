@@ -1,0 +1,71 @@
+*{
+    background-color: #FFFAFA;
+}
+
+h1 {
+    text-align: center;
+    background-color: #FFDAB9;
+    padding: 10px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.menu {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+li > a:link, a:visited {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #FFDAB9;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+#conteudo {
+    background-color: #FFDAB9;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+h2 {
+    background-color: transparent;
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 1.5em;
+    margin: 3px;
+}
+
+p {
+    background-color: transparent;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    margin: 5px 0;
+}
+
+p > strong {
+    background-color: transparent;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    margin: 0;
+}
+
+h4 {
+    background-color: transparent;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: end;
+    margin: 10px;
+}
