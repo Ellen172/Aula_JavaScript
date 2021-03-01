@@ -1,3 +1,4 @@
+
 var nome = "Ellen Christina";
 var n1 = 18;
 var n2 = 10;
@@ -56,3 +57,30 @@ var frutas = [{nome:"maça", cor:"vermelha"}, {nome:"uva", cor:"roxa"}];
 console.log(frutas); //imprimindo todos os elementos
 console.log(frutas[1]); //imprimindo um item da lista
 console.log(frutas[1].nome); //imprimindo um elemento do dicionario de um item
+
+//Condicionais e Laços de repetição
+var idade = prompt ("qual sua idade? "); //promot define uma pergunta para o usuário e armazena em uma variável
+if (idade >= 18){
+    alert("maior de idade");
+}else {
+    alert("menor de idade");
+}
+
+var count = 0;
+while (count <= 5){
+    console.log(count);
+    count++;
+};
+
+var num;
+for (num=5; num >= 0; num--){
+    console.log(num);
+};
+
+
+//DATE
+var data = new Date(); //encontra a data de hoje e armazena em uma variável
+console.log(data); //imprimi a data completa
+console.log("Hoje é dia " + data.getDate()); //imprimi o dia de hoje
+console.log("Estamos no mês " + (data.getMonth()+1)); //retorna o mês (começa a contar do zero, é necessário somar 1)
+console.log("minuto: " + data.getMinutes()); //retorna os minutos
