@@ -7,7 +7,7 @@
     <script type="text/JavaScript" src="js/manipular.js"></script>
     <title>JavaScript</title>
 </head>
-<body>
+<body onload="load()"> <!--chamará a função 'load()' quando o body for carregado-->
     <h1>Aulas JavaScript</h1>
     <nav class="menu">
         <ul>
@@ -23,9 +23,20 @@
     <div id="conteudo">
         <h2>Manipulação da Página</h2>
         <br/>
-        <button type="button">Clique aqui</button>
+        <button type="button" onclick="clicado()">Clique aqui</button> <!--quando for clicado 'onclick', chamará a função 'clicado' do js-->
+        <h3 id="agradecimento"></h3> <!--quando for clicado executará 'redirecionar()'-->
         <br/>
-        <h4>Verifique o Console para exemplos</h4>
+        <p id="redirecionar" onclick="redirecionar()">Clique aqui</p>
+        <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p> <!--quando passar o mouse por cima (on mouse over), executará 'trocar()' e quando o mouse estiver fora (on mouse out), executará 'voltar()'-->
+        <p id="mousemove2" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p> <!--executará como o de cima mas alteraria o id=mousemove e não ele mesmo-->
+        <p onmouseover="trocarparametro(this)" onmouseout="voltarparametro(this)">Passe o mouse aqui</p> <!--utilizando-se o this como parametro, altera ele mesmo-->
+        <br/>
+        <select onchange="funcaoChange(this)"> <!-- o onchange é executado quando há alteração de algum valor-->
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+        <h4>Verificar console para valores do select</h4>
     </div>
 </body>
 </html>

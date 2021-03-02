@@ -75,6 +75,10 @@ p > strong {
     margin: 0;
 }
 
+h3 {
+    background-color: transparent;
+}
+
 h4 {
     background-color: transparent;
     font-family: Comic Sans MS, Comic Sans, cursive;
